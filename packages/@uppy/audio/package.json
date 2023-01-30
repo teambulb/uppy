@@ -26,14 +26,14 @@
     "url": "git+https://github.com/transloadit/uppy.git"
   },
   "dependencies": {
-    "@uppy/utils": "workspace:^",
+    "@uppy/utils": "^5.1.2",
     "preact": "^10.5.13"
   },
   "devDependencies": {
     "@jest/globals": "^29.0.0"
   },
   "peerDependencies": {
-    "@uppy/core": "workspace:^"
+    "@uppy/core": "^3.0.5"
   },
   "publishConfig": {
     "access": "public"
