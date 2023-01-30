@@ -181,6 +181,7 @@ function uppySetOptions () {
     window.uppy.use(Audio, {
       target: Dashboard,
       showAudioSourceDropdown: true,
+      preferredAudioMimeType: 'audio/wav',
     })
   }
   if (!opts.Audio && audioInstance) {

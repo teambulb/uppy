@@ -186,5 +186,9 @@
     "@types/react": "^17",
     "@types/webpack-dev-server": "^4",
     "preact": "patch:preact@npm:10.10.0#.yarn/patches/preact-npm-10.10.0-dd04de05e8.patch"
+  },
+  "dependencies": {
+    "extendable-media-recorder": "^7.1.1",
+    "extendable-media-recorder-wav-encoder": "^7.0.81"
   }
 }

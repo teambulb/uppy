@@ -2607,6 +2607,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.20.7":
+  version: 7.20.13
+  resolution: "@babel/runtime@npm:7.20.13"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 09b7a97a05c80540db6c9e4ddf8c5d2ebb06cae5caf3a87e33c33f27f8c4d49d9c67a2d72f1570e796045288fad569f98a26ceba0c4f5fad2af84b6ad855c4fb
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:~7.5.4":
   version: 7.5.5
   resolution: "@babel/runtime@npm:7.5.5"
@@ -8219,6 +8228,8 @@ __metadata:
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-unicorn: ^43.0.0
+    extendable-media-recorder: ^7.1.1
+    extendable-media-recorder-wav-encoder: ^7.0.81
     github-contributors-list: ^1.2.4
     glob: ^8.0.0
     jest: ^29.0.0
@@ -11107,6 +11118,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"automation-events@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "automation-events@npm:5.0.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    tslib: ^2.4.1
+  checksum: 10dc801781350871464719fbe0d93e66d71315522ee1d7c4ec2c95f9cf8dd73f8cbdcff2e0f38bd0feef993f939de06ba7f4c674b9dfb72998c88d2484992b43
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:^10.2.6, autoprefixer@npm:^10.4.8":
   version: 10.4.8
   resolution: "autoprefixer@npm:10.4.8"
@@ -11922,6 +11943,18 @@ __metadata:
   bin:
     brfs: bin/cmd.js
   checksum: ecde84cb9e1398964c575f265bf5d667bf7277bc9f325c940e4655194a2a65901115cdd1bf33aa1cec102cae0fd3a0e2b852dcf23255b94b1bf2fed652a16285
+  languageName: node
+  linkType: hard
+
+"broker-factory@npm:^3.0.73":
+  version: 3.0.73
+  resolution: "broker-factory@npm:3.0.73"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    fast-unique-numbers: ^7.0.0
+    tslib: ^2.4.1
+    worker-factory: ^6.0.74
+  checksum: 33873f80dcfd47eb42e0323bf00b4a36a91bf3e8e7b3e64fdfbb520691f261acae7a90ce2135854083e7ea4df4873eea8ac809bc43a1c00b7c74b531a8a1e21c
   languageName: node
   linkType: hard
 
@@ -13536,6 +13569,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"compilerr@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "compilerr@npm:10.0.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    dashify: ^2.0.0
+    indefinite-article: 0.0.2
+    tslib: ^2.4.1
+  checksum: 9fc7f4a172abecac547b68dcf70c612ea2e63cad06255fad312ed9641e71ec71af1ea8a6d47c648ed50695cc611ed95117b98c4fd5f42025edf179fa3712e719
+  languageName: node
+  linkType: hard
+
 "component-emitter@npm:^1.2.1, component-emitter@npm:^1.3.0, component-emitter@npm:~1.3.0":
   version: 1.3.0
   resolution: "component-emitter@npm:1.3.0"
@@ -14633,6 +14678,13 @@ __metadata:
   dependencies:
     assert-plus: ^1.0.0
   checksum: 3634c249570f7f34e3d34f866c93f866c5b417f0dd616275decae08147dcdf8fccfaa5947380ccfb0473998ea3a8057c0b4cd90c875740ee685d0624b2983598
+  languageName: node
+  linkType: hard
+
+"dashify@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "dashify@npm:2.0.0"
+  checksum: f13233f38fc39ea8dabe3a5bef51421906aa8a52e4403fcb56e3e6464428f5c0bdd75562706929a245c698bceccf68a82e30e9e327a0c582469868522a163f8c
   languageName: node
   linkType: hard
 
@@ -17844,6 +17896,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"extendable-media-recorder-wav-encoder-broker@npm:^7.0.75":
+  version: 7.0.75
+  resolution: "extendable-media-recorder-wav-encoder-broker@npm:7.0.75"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    broker-factory: ^3.0.73
+    extendable-media-recorder-wav-encoder-worker: ^8.0.74
+    tslib: ^2.4.1
+  checksum: 35a32060ce6b9d9d82d0a22dc3dfc4b83daa6e237b997e16702efcd424a030bb1c1fbfc5b3b41ee6d3c475b23dc6594ca7ceed2c889ad54e8023b1af4fa0ffbf
+  languageName: node
+  linkType: hard
+
+"extendable-media-recorder-wav-encoder-worker@npm:^8.0.74":
+  version: 8.0.74
+  resolution: "extendable-media-recorder-wav-encoder-worker@npm:8.0.74"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    tslib: ^2.4.1
+    worker-factory: ^6.0.74
+  checksum: 07df36f8620b1b2965110e1f43cc53babc808a64cfd1ac8a76f6fc00015d71d2b8b50a4d8de74c5c34f5f5ce405cfaaf13ce892ec22ec36cebf5c422416ae625
+  languageName: node
+  linkType: hard
+
+"extendable-media-recorder-wav-encoder@npm:^7.0.81":
+  version: 7.0.81
+  resolution: "extendable-media-recorder-wav-encoder@npm:7.0.81"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    extendable-media-recorder-wav-encoder-broker: ^7.0.75
+    extendable-media-recorder-wav-encoder-worker: ^8.0.74
+    tslib: ^2.4.1
+  checksum: b0b5d302e4d4db83c5b4213231d49574dee487e9698b549a023bb2afc271d73a0485b3a7b423a74da723124b809555934c269f4e01fcbd27e6f68021bb26c39b
+  languageName: node
+  linkType: hard
+
+"extendable-media-recorder@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "extendable-media-recorder@npm:7.1.1"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    media-encoder-host: ^8.0.83
+    multi-buffer-data-view: ^4.0.0
+    recorder-audio-worklet: ^5.1.35
+    standardized-audio-context: ^25.3.37
+    subscribable-things: ^2.1.12
+    tslib: ^2.4.1
+  checksum: 812edcee6fba399b2a4ccf13b4911db8779923786134cba1b60d20fc28f87bcd99edaaf220b37d0acccf2b218593e5eac98999f35bf4d84368d6707ba7806349
+  languageName: node
+  linkType: hard
+
 "external-editor@npm:^3.0.3":
   version: 3.1.0
   resolution: "external-editor@npm:3.1.0"
@@ -17988,6 +18090,16 @@ __metadata:
   version: 2.1.1
   resolution: "fast-safe-stringify@npm:2.1.1"
   checksum: a851cbddc451745662f8f00ddb622d6766f9bd97642dabfd9a405fb0d646d69fc0b9a1243cbf67f5f18a39f40f6fa821737651ff1bceeba06c9992ca2dc5bd3d
+  languageName: node
+  linkType: hard
+
+"fast-unique-numbers@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "fast-unique-numbers@npm:7.0.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    tslib: ^2.4.1
+  checksum: b10dfa7b4d89a5ec9ea31372003a9f2fef3373fa517a3182c02fccda07899f19388ce00729869f88ccd728458b4265da9524f8abf1b8707e0a4facae4a23a917
   languageName: node
   linkType: hard
 
@@ -20777,6 +20889,13 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   version: 0.1.4
   resolution: "imurmurhash@npm:0.1.4"
   checksum: 7cae75c8cd9a50f57dadd77482359f659eaebac0319dd9368bcd1714f55e65badd6929ca58569da2b6494ef13fdd5598cd700b1eba23f8b79c5f19d195a3ecf7
+  languageName: node
+  linkType: hard
+
+"indefinite-article@npm:0.0.2":
+  version: 0.0.2
+  resolution: "indefinite-article@npm:0.0.2"
+  checksum: 5edd5cd34a80e56ab82a8fa6ee96de28e3fbd3003a0f5dab388421c4bf0b512dd337f9955d993af8b55fbdc923e14625a72350218a4d41aae773054e0a4b45fe
   languageName: node
   linkType: hard
 
@@ -24603,6 +24722,43 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   languageName: node
   linkType: hard
 
+"media-encoder-host-broker@npm:^7.0.75":
+  version: 7.0.75
+  resolution: "media-encoder-host-broker@npm:7.0.75"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    broker-factory: ^3.0.73
+    fast-unique-numbers: ^7.0.0
+    media-encoder-host-worker: ^9.0.75
+    tslib: ^2.4.1
+  checksum: f7db206d1b435b77d3fe857bc01afe5683944b5864560d9cd4a056938dff49bf5579c8c7a82a467d7af87e8d0d19b425163aad5618a6a074cc2aa1a9489ca37d
+  languageName: node
+  linkType: hard
+
+"media-encoder-host-worker@npm:^9.0.75":
+  version: 9.0.75
+  resolution: "media-encoder-host-worker@npm:9.0.75"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    extendable-media-recorder-wav-encoder-broker: ^7.0.75
+    tslib: ^2.4.1
+    worker-factory: ^6.0.74
+  checksum: 6244a7fc9f798f0871c9e26be3e401918c235d07780acafa76ae4ef8706d8dabf3809ebbdc3a0c411f2a46e5a5e2abd610860c25c09e16202306a8d2211f69e7
+  languageName: node
+  linkType: hard
+
+"media-encoder-host@npm:^8.0.83":
+  version: 8.0.83
+  resolution: "media-encoder-host@npm:8.0.83"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    media-encoder-host-broker: ^7.0.75
+    media-encoder-host-worker: ^9.0.75
+    tslib: ^2.4.1
+  checksum: f8e4839da991c72f93475b5dbaf8eb9d29177e832813993845077a5e91e22a9c0047e2d2d12ac2e04f8497ca60c986e6f8810e5277d2720b81361def9f71052a
+  languageName: node
+  linkType: hard
+
 "media-typer@npm:0.3.0":
   version: 0.3.0
   resolution: "media-typer@npm:0.3.0"
@@ -26049,6 +26205,16 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
     type-is: ^1.6.4
     xtend: ^4.0.0
   checksum: b5550d250aeee9c4d630eaecd133af0899239f6b10cec4b448ddd0a808025b383520b8227198a8612f60c2cd2094bcb60de93d973084f889d4e40efe6dbd641e
+  languageName: node
+  linkType: hard
+
+"multi-buffer-data-view@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "multi-buffer-data-view@npm:4.0.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    tslib: ^2.4.1
+  checksum: e8e5a4a0dcfbcf116bb79dec569d870b99aa97148d4cc447f855c30867be71f4efc59313b54538cf0f68eb62470f9fb2603abe8196590cff59980f9b3b305324
   languageName: node
   linkType: hard
 
@@ -30557,6 +30723,32 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   languageName: node
   linkType: hard
 
+"recorder-audio-worklet-processor@npm:^4.2.19":
+  version: 4.2.19
+  resolution: "recorder-audio-worklet-processor@npm:4.2.19"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    tslib: ^2.4.1
+  checksum: 8ecdbb01c75e26a3284ba9899aab43f3f912c2f020ca192bb0a6f75d67ebc2e710741264790ddc3d7583957868cc99b66f432dc4d1bb7996da5e20292ecdec78
+  languageName: node
+  linkType: hard
+
+"recorder-audio-worklet@npm:^5.1.35":
+  version: 5.1.35
+  resolution: "recorder-audio-worklet@npm:5.1.35"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    broker-factory: ^3.0.73
+    fast-unique-numbers: ^7.0.0
+    recorder-audio-worklet-processor: ^4.2.19
+    standardized-audio-context: ^25.3.37
+    subscribable-things: ^2.1.12
+    tslib: ^2.4.1
+    worker-factory: ^6.0.74
+  checksum: 33d81465d09b629a7e26dd46a07c159b49d8bd27fbae9e803caeea5701eedf9836ff1118784722e6ced8a18625059646816c05a9b1eef13feb38c9c8eec14cb7
+  languageName: node
+  linkType: hard
+
 "redent@npm:^1.0.0":
   version: 1.0.0
   resolution: "redent@npm:1.0.0"
@@ -30646,6 +30838,13 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   version: 0.13.9
   resolution: "regenerator-runtime@npm:0.13.9"
   checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.11":
+  version: 0.13.11
+  resolution: "regenerator-runtime@npm:0.13.11"
+  checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
   languageName: node
   linkType: hard
 
@@ -31888,6 +32087,13 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   version: 4.1.0
   resolution: "rx@npm:4.1.0"
   checksum: 64edd278f2e32361bdbaa44bd503e2d1caf1331cece2db87852925b4f58f407563d879ce9df0ac2a593b4588c552437e18bbd53ea361f0b3f2f274a7a5cc4c21
+  languageName: node
+  linkType: hard
+
+"rxjs-interop@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "rxjs-interop@npm:2.0.0"
+  checksum: 621263f0d327f8f3524adc5f83b27f6d217ce914b91d818a5e087f1eb237b2c5b4a7675565301985cee5e43c3a790341da484b92eef8e6b8927306ae827b9ae0
   languageName: node
   linkType: hard
 
@@ -33290,6 +33496,17 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   languageName: node
   linkType: hard
 
+"standardized-audio-context@npm:^25.3.37":
+  version: 25.3.37
+  resolution: "standardized-audio-context@npm:25.3.37"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    automation-events: ^5.0.0
+    tslib: ^2.4.1
+  checksum: 5204e5774bf7476c6253d82036584b96b7ad17fc7d48b9939fe4f834e5d6e020e3276e9469e7aacb95b9fb514fad7cfc591a4d584ff5902d757e96c80e8939a5
+  languageName: node
+  linkType: hard
+
 "start-server-and-test@npm:^1.14.0":
   version: 1.14.0
   resolution: "start-server-and-test@npm:1.14.0"
@@ -34105,6 +34322,17 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   dependencies:
     minimist: ^1.1.0
   checksum: 8359df72e9a2d03c35702ba58e49cac04daae8f27dff26837e12687c7d10cb800a036fd33fdc5eb0e8c24fb25d804f657fe8bde18dd3dd6ec7dab8eff7aac27e
+  languageName: node
+  linkType: hard
+
+"subscribable-things@npm:^2.1.12":
+  version: 2.1.12
+  resolution: "subscribable-things@npm:2.1.12"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    rxjs-interop: ^2.0.0
+    tslib: ^2.4.1
+  checksum: fc7fc04c97752435b47a6cfa8a65700ef1d500538339dee2b140f55a102910c3f504b5a39f8416201961dd4596e66fe1a0bb7edea1838f9db36a3313961e2186
   languageName: node
   linkType: hard
 
@@ -35177,6 +35405,13 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.4.1":
+  version: 2.5.0
+  resolution: "tslib@npm:2.5.0"
+  checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
   languageName: node
   linkType: hard
 
@@ -37497,6 +37732,18 @@ hexo-filter-github-emojis@arturi/hexo-filter-github-emojis:
   version: 0.0.3
   resolution: "wordwrap@npm:0.0.3"
   checksum: dfc2d3512e857ae4b3bc2e8d4e5d2c285c28a4b87cd1d81c977ce9a1a99152d355807e046851a3d61148f39d877fbb889352e07b65a9cbdd2256aa928e159026
+  languageName: node
+  linkType: hard
+
+"worker-factory@npm:^6.0.74":
+  version: 6.0.74
+  resolution: "worker-factory@npm:6.0.74"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    compilerr: ^10.0.0
+    fast-unique-numbers: ^7.0.0
+    tslib: ^2.4.1
+  checksum: e9ac70cf0ae80c34547e7879c260b8fc95a69956f5ce147eb6cfa6fee61e642c4a031f1e59401b7bc2dc793da1fdab0709c1765747be5f42a6918be6ba00f16e
   languageName: node
   linkType: hard
 

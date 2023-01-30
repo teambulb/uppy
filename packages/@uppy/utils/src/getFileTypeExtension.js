@@ -2,6 +2,7 @@ const mimeToExtensions = {
   'audio/mp3': 'mp3',
   'audio/mp4': 'mp4',
   'audio/ogg': 'ogg',
+  'audio/wav': 'wav',
   'audio/webm': 'webm',
   'image/gif': 'gif',
   'image/heic': 'heic',

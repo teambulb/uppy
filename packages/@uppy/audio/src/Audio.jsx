@@ -7,6 +7,8 @@ import supportsMediaRecorder from './supportsMediaRecorder.js'
 import RecordingScreen from './RecordingScreen.jsx'
 import PermissionsScreen from './PermissionsScreen.jsx'
 import locale from './locale.js'
+import { MediaRecorder, register } from 'extendable-media-recorder'
+import { connect } from 'extendable-media-recorder-wav-encoder'
 
 import packageJson from '../package.json'
 
@@ -121,10 +123,25 @@ export default class Audio extends UIPlugin {
     })
   }
 
-  #startRecording = () => {
-    // only used if supportsMediaRecorder() returned true
-    // eslint-disable-next-line compat/compat
-    this.#recorder = new MediaRecorder(this.#stream)
+  #getMediaRecorderMimeType = () => {
+    const options = {}
+    // Safari doesn't have the `isTypeSupported` API.
+    if (MediaRecorder.isTypeSupported) {
+      if (this.opts.preferredAudioMimeType && MediaRecorder.isTypeSupported(this.opts.preferredAudioMimeType)) {
+        options.mimeType = this.opts.preferredAudioMimeType
+      }
+    }
+    options.mimeType = this.opts.preferredAudioMimeType
+    return options
+  }
+
+  #startRecording = async () => {
+    try {
+      await register(await connect())
+      // eslint-disable-next-line no-empty
+    } catch (e) {}
+
+    this.#recorder = new MediaRecorder(this.#stream, this.#getMediaRecorderMimeType())
     this.#recordingChunks = []
     let stoppingBecauseOfMaxSize = false
     this.#recorder.addEventListener('dataavailable', (event) => {
@@ -132,8 +149,8 @@ export default class Audio extends UIPlugin {
 
       const { restrictions } = this.uppy.opts
       if (this.#recordingChunks.length > 1
-          && restrictions.maxFileSize != null
-          && !stoppingBecauseOfMaxSize) {
+        && restrictions.maxFileSize != null
+        && !stoppingBecauseOfMaxSize) {
         const totalSize = this.#recordingChunks.reduce((acc, chunk) => acc + chunk.size, 0)
         // Exclude the initial chunk from the average size calculation because it is likely to be a very small outlier
         const averageChunkSize = (totalSize - this.#recordingChunks[0].size) / (this.#recordingChunks.length - 1)
@@ -187,7 +204,7 @@ export default class Audio extends UIPlugin {
           recordedAudio: URL.createObjectURL(file.data),
         })
       } catch (err) {
-        // Logging the error, exept restrictions, which is handled in Core
+        // Logging the error, except restrictions, which is handled in Core
         if (!err.isRestriction) {
           this.uppy.log(err)
         }
@@ -213,7 +230,7 @@ export default class Audio extends UIPlugin {
         this.uppy.addFile(this.#capturedMediaFile)
       }
     } catch (err) {
-      // Logging the error, exept restrictions, which is handled in Core
+      // Logging the error, except restrictions, which is handled in Core
       if (!err.isRestriction) {
         this.uppy.log(err, 'error')
       }
